@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BossRecipe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url(https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=600);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a, .dropdown .dropbtn {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar a.active {
+            background-color: #408ce9;
+            color: white;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            background-color: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .logo {
+            width: 50px;
+            height: auto;
+            margin-right: 8px;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 70px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2, p {
+            color: aliceblue;
+        }
+        .btn-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .btn-container a {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #408ce9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .btn-container a img {
+            margin-right: 8px;
+        }
+        .btn-container a:hover {
+            background-color: #306bb3;
+        }
+        .image-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+        }
+        .image-grid div {
+            text-align: center;
+        }
+        .image-grid img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .image-grid img:hover {
+            transform: scale(1.1);
+        }
+        .image-grid p {
+            font-size: 14px;
+            font-weight: bold;
+            color: #131212;
+        }  
+        h3{
+            color: rgb(18, 137, 242);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the best recipe website</h1>
+
+    <div class="navbar">
+        <a href="BossRecipe." class="BossRecipe-link">
+            <img src="C:\Users\eliud\Pictures\Screenshots\bs 2.png" alt="recipe logo" class="logo">
+        </a>
+        <div class="btn-container">
+        <a class="active" href="#home">Home</a>
+       
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Contacts 
+                
+            </button>
+            <div class="dropdown-content">
+                <a href="#admin-phone">Administrator's No: +254-700-000-000</a>
+                <a href="#admin-email">Email: admin@bossrecipe.com</a>
+                <a href="#location">Location: PO Box 59857,  City Square Nairobi, Kenya</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>WHERE IT STARTED</h2>
+        <p>The organization was first started in the year 2023, by Chef Christian Obosi who had an inspired goal to help chefs all over the world learn new recipes and even create new ones from their shared experiences.</p>
+        <p>BossRecipe has not only created a large diverse platform for experienced chefs to interact but also sustained new relationships with beginners, helping them and nurturing them to become the best of the best.</p>
+        <h2>WHAT WE OFFER</h2>
+        <p>BossRecipe gives chefs the opportunity to share their recipes with other chefs. It also offers chefs the chance to learn other dishes and also create absolutely new dishes.</p>
+    </div>
+    <div class="image-grid">
+        <div>
+            <img src="https://pinchofyum.com/wp-content/uploads/Trader-Joes-Turkey-Sandwich-8-183x183.jpg" alt="Quick and Easy">
+            <p>QUICK AND EASY</p>
+        </div>
+        <div>
+            <img src="https://pinchofyum.com/wp-content/uploads/Marry-Me-Chicken-6-183x183.jpg" alt="Dinner">
+            <p>DINNER</p>
+        </div>
+        <div>
+            <img src="https://pinchofyum.com/wp-content/uploads/Cauliflower-Black-Bean-Tostadas-4-183x183.jpg" alt="Vegetarian">
+            <p>VEGETARIAN</p>
+        </div>
+        <div>
+            <img src="https://pinchofyum.com/wp-content/uploads/Spicy-Peanut-Chicken-Salad-Soba-1-2-183x183.jpg" alt="Healthy">
+            <p>HEALTHY</p>
+        </div>
+        <div>
+            <img src="https://pinchofyum.com/wp-content/uploads/Couscous-Summer-Salad-183x183.jpg" alt="Salads">
+            <p>SALADS</p>
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <a href="registration.html">
+        
+            Register
+        </a>
+        <a href="login.html">
+         
+            Login
+        </a>
+        <a href="About us.html">About Us</a>
+    </div>
+    <h3> &copy; 2024 BossRecipe</h3>
+</body>
+</html>

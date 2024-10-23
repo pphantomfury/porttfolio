@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BossRecipe Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url(https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=600);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        form input {
+            margin-bottom: 16px;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        h3{
+            color: rgb(18, 137, 242);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="loginForm">
+        <h3>BossRecipe Login Form</h3>
+        <label for="uname">UserName</label>
+        <input type="text" id="uname" name="User_Name">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        // Use the correct form ID here
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission and page reload
+            
+            // Redirect to RegisteredHome.html after form submission
+            window.location.href = 'RegisteredHome.html'; 
+        });
+    </script>
+    <h3> &copy; 2024 BossRecipe</h3>
+</body>
+</html>
